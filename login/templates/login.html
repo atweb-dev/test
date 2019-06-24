@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head> <title> Log In </title> </head>
+  <body>
+    <h1 align=center>Log In<br></h1>
+    <form action="/login/" method=post align=center>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <br>
+      <p align=center><input type="submit" value="Log In" />
+      or <b><a href="{% url 'reg' %}">Register</a></b></p>
+    </form>
+   </body>
+</html>

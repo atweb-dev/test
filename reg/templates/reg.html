@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head> <title> Registration </title> </head>
+  <body>
+    <h1 align=center>Registration<br></h1>
+    <form action="/registration/" method=post align=center>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <p align=center><input type="submit" value="Register" />
+    <p align=center><b><a href="{% url 'lgn' %}">Go Back</a></b></p>
+   </body>
+</html>

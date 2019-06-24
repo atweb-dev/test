@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head> <title> Message </title> </head>
+  <body>
+    <p align=right><b><a href="{% url 'lgt' %}">Log Out</a></b></p>
+    <h1 align=center>Send Message</h1>
+    <form action="/message/" method=post align=center>
+      {% csrf_token %}
+      {{ form.as_p }}
+    <p align=center><input type="submit" value="Submit" />
+   </body>
+</html>
